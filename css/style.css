@@ -12,12 +12,12 @@ body{
 
 /* GLobal */
 .container{
-	width: 80%;
+	width: 95%;
 	margin: auto;
 	overflow: hidden;
 }
 
-header ul{
+ul{
 	margin: 0;
 	padding: 0;
 }
@@ -56,6 +56,25 @@ header #branding h1	{
 
 header nav{
 	float: right;
-	margin-top: 10px;
+	margin-top: 11px;
+}
 
+header .highlight, header .current a{
+	color: #FF0000;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase{
+	min-height: 400px;
+	background: url('../img/showcase.jpg') no-repeat;
+	text-align: left;
+	color: #dddddd;
+	text-size: 5px;
 }
