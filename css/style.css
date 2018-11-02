@@ -1,102 +1,86 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
 /*
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	line-height: 1.5;
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
 */
-	font: 15px/1.5 Arial, Helvetica,sans-serif;
-	padding: 0;
-	margin: 0;
-	background-color: #f4f4f4;
-}
-
-/* GLobal */
-.container{
-	width: 95%;
-	margin: auto;
-	overflow: hidden;
-}
-
-ul{
-	margin: 0;
-	padding: 0;
-}
-
-
-/* Header */
-header{
-	background: #35424a;
-	color: #ffffff;
-	padding-top: 30px;
-	min-height: 70px;
-	border-bottom:#FF0000 3px	solid;
-	border-top:#FF0000 3px solid;
-}
-
-header a{
-	color:#ffffff;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 16px;
-}
-
-header li{
-	float:left;
-	display: inline;
-	padding: 0 5px 0 5px;
-}
-
-header #branding{
-	float: left;
-}
-
-header #branding h1	{
-	margin: 0;
-}
-
-header nav{
-	float: right;
-	margin-top: 11px;
-}
-
-header .highlight, header .current a{
-	color: #FF0000;
-	font-weight: bold;
-}
-
-header a:hover{
-	color: #cccccc;
-	font-weight: bold;
-}
-
-/* Showcase */
-
-#showcase{
-	min-height: 400px;
-	background: url('../img/ys.jpg') no-repeat 0 -400px;
-	text-align: left;
-	color: #ffffff;
-	width: 100%;
-	height: auto;
-}
-
-#showcase h2{
-	margin-top: 100px;
-	font-size: 20px;
-	margin-bottom: 10px;
-}
-
-#newsletter{
-	padding: 15px;
-	color: #ffffff;
-	background:#35424a
-}
-
-#newsletter h1{
-	float: left;
-}
-
-#newsletter form{
-	float: left;
-	margin-bottom: 15px;
-}

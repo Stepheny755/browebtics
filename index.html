@@ -2,68 +2,77 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
     <meta name="description" content="SGS Robotics">
     <meta name="keywords" content="sgs, robotics, sub,">
     <meta name="author" content="Aaron Pham">
     <title>SGS Robotics | Welcome</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1><span class="highlight">SGS</span> Robotics</h1>
-        </div>
-        <nav>
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="auv.html">AUV</a></li>
-            <li><a href="update.html">Updates</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="sponsor.html">Sponsor</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+
+<!--- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/robotics.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse " data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="auv.html">AUV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <section id="showcase">
-      <div class="container">
-        <h2>SGS AUV Robotics Team</h2>
-      </div>
-    </section>
-
-    <section id="newsletter">
-      <div class="container">
-        <h4>Subscribe to our newsletter</h4>
-        <form class="notification" action="process.js" method="post">
-          <input type="email" placeholder="Enter Email ...">
-          <button type="submit" class="button_1" name="button">Subscribe</button>
-        </form>
-      </div>
-    </section>
-
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <h3>1</h3>
-          <p>will create a link to the update blog</p>
-        </div>
-
-        <div class="box">
-          <h3>2</h3>
-          <p>will create a link to the update blog</p>
-        </div>
-
-        <div class="box">
-          <h3>3</h3>
-          <p>will create a link to the update blog</p>
-        </div>
-      </div>
-    </section>
+<!-- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#slides" data-slide-to="0" class="active"></li>
+    <li data-target="#slides" data-slide-to="1"></li>
+    <li data-target="#slides" data-slide-to="2"></li>
+    <li data-target="#slides" data-slide-to="3"></li>
+    <li data-target="#slides" data-slide-to="4"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item" active>
+      <img src="img/showcase.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="img/header2.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="img/header3.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="img/header4.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="img/header5.jpg">
+    </div>
+  </div>
+</div>
+<!--- Footer -->
 
     <footer>
       <p>&copy;2018, SGSRobotics </p>
