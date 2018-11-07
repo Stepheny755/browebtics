@@ -30,6 +30,14 @@
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
+
+/*---Adjusting some settings for--*/
+
+.carousel-inner img{
+  margin: 0 auto;
+  max-width: none;
+  min-width: 100%;
+}
 /*--- Fixed Background Image --*/
 figure {
   position: relative;
