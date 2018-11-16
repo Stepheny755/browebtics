@@ -12,6 +12,21 @@
 }
 
 
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+.main-container{
+  padding: auto;
+  margin: 0;
+}
+
 /*---Adjusting some settings for--*/
 
 .carousel-inner img{
@@ -46,7 +61,7 @@ figure {
 }
 #fixed {
   background-image: url('img/mac.png');
-  position: fixed;
+  position: absolute;
   display: block;
   top: 0;
   left: 0;
@@ -59,12 +74,8 @@ figure {
   will-change: transform;
 }
 
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
-
 /* Slider */
+
 .slick-slide {
     margin: 0px 20px;
 }
@@ -179,7 +190,15 @@ figure {
 .slick-arrow.slick-hidden {
     display: none;
 }
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
 
+#customer-logos .entry-container {
+    padding: 20px;
+    width: 50%;
+}
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
