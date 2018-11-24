@@ -59,6 +59,9 @@ figure {
   will-change: transform;
 }
 
+.bxSlider{
+  
+}
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;

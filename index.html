@@ -13,8 +13,16 @@
   	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
   </head>
-  <body>
+  <body class="parallax">
 
 <!--- Navigation -->
   <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -68,28 +76,20 @@
 
 <!-- Sponsors bar -->
 <div class="container">
-  <section class="customer-logos slider">
-    <div class="slide">
-      <a href="http://www.walch.com.hk/">
-        <img src="img/sponsor/walch.jpg">
-      </a>
-    </div>
-    <div class="slide">
-        <a href="http://www.stollco.com/">
-            <img src="img/sponsor/stollco.jpg" style="width:100%">
-        </a>
-    </div>
-    <div class="slide">
-        <a href="https://www.solidworks.com/">
-            <img src="img/sponsor/640px-SolidWorks_Logo_svg.png" style="width:100%">
-        </a>
-    </div>
-    <div class="slide">
-        <a href="https://www.stgeorges.bc.ca/page/connect/st-georges-parents-association">
-            <img src="img/sponsor/St._George's_School_Logo.png" style="width:100%">
-        </a>
-    </div>
-  </section>
+    <ul class="bxslider">
+      <li href="http://www.walch.com.hk/">
+        <img src="img/sponsor/walch.jpg" style="width:50%; display:block;">
+      </li>
+      <li href="http://www.stollco.com/">
+        <img src="img/sponsor/stollco.jpg" style="width:50%; display:block;">
+      </li>
+      <li href="https://www.solidworks.com/">
+        <img src="img/sponsor/640px-SolidWorks_Logo_svg.png" style="width:50%; display:block;">
+      </li>
+      <li href="https://www.stgeorges.bc.ca/page/connect/st-georges-parents-association">
+        <img src="img/sponsor/St._George's_School_Logo.png" style="width:50%; display:block;">
+      </li>
+    </ul>
 </div>
 
 <!--- Footer -->
