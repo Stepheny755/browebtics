@@ -1,5 +1,5 @@
-body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+.body {
+    padding-top: 70px; 
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     height:100%;
     scrollbar-face-color:#FFFFFF ;
@@ -31,29 +31,29 @@ body {
 }
 
 
-a, a:hover, a:visited, a:focus {
+.a, .a:hover, .a:visited, .a:focus {
     color: #fff;
     text-decoration: none;
 }
 
-nav {
+.nav {
 	background-color: #000;
 }
 
-nav a, nav li{
+.nav a, .nav li{
     color: #f4f5f6;
       display:block;
 }
 
 
-#excalibur p {
+#Fury p {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-weight: 300;
     font-size: 270%;
     display: none;
 }
 
-#excalibur {
+#Fury {
     text-align: center;
     margin-top: -80px;
     background: url("../img/main.png") no-repeat bottom center;
@@ -61,6 +61,17 @@ nav a, nav li{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:auto 700px;
-    min-height: 800px;
-    
+    min-height: 800px;  
 }
+
+#footer{
+    text-align: center;
+}
+
+#about{
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 20 10 20 10;
+    padding: 20 10 20 10;
+}
+
