@@ -6,17 +6,14 @@
 <meta name="description" content="SGS Robotics">
 <title>SGS Robotics | Welcome</title>
 <link rel="stylesheet" href="css/style.css">
-<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Signika:400,300" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
 </head>
 
 <body>
 
 <!-- Navigation Bar -->
-<div class="wrapper"></div>
 <div id="nav-container">
   <nav class="navbar navbar-expand-md navbar-light bg-light navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -35,12 +32,13 @@
   </nav>
 </div>
 
+<!--Fury-->
 <div class="jumbotron mt-5" id="Fury">
     <a href="auv.html"><img src="img/Fury.jpg" alt="Fury"></a>
 </div>
-   
 
-<div id="main" class="container mt-5"> 
+<!--Sponsor bar-->
+<div id="main" class="container mt-5">
   <!-- Sponsor Slider -->
     <hr class="my-4">
   <section id="sponsor-banner" class="slider mt-5">
@@ -59,10 +57,36 @@
       <p class="text-center mt-5"> &copy; 2018 SGS Robotics. Contact us <a href="contact.html">here</a></p>
     </footer>
 </div>
-    
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<body>
+  <div class=" welcome-section content-hidden">
+    <div class="content-wrap">
+      <ul class="fly-in-text">
+        <li>F</li>
+        <li>U</li>
+        <li>R</li>
+        <li>Y</li>
+      </ul>
+      <a href="#" class="enter-button">ENTER</a>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function(){
+      var welcomeSection = $('.welcome-section'),
+          enterButton = welcomeSection.find('.enter-button');
+
+          setTimeout(function() {
+            welcomeSection.removeClass('content-hidden');
+          },800);
+
+          enterButton.on('click', function(e){
+            e.preventDefault();
+            welcomeSection.addClass('content-hidden').fadeOut();
+          });
+    });
+  </script>
+
+
 </body>
 </html>
